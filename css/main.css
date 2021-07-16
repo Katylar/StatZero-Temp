@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+sup, sub {
+  font-size: 60%;
+}
+
+* {
+  outline: none;
+}
+
+.preload-transitions * {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+a:hover {
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Medium"), local("TitlingGothicFBNormal-Medium"), url("../fonts/TitlingGothicFBNormal-Medium.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Medium.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Regular"), local("TitlingGothicFBNormal-Regular"), url("../fonts/TitlingGothicFBNormal-Regular.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Regular.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Black"), local("TitlingGothicFBNormal-Black"), url("../fonts/TitlingGothicFBNormal-Black.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Black.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Standard"), local("TitlingGothicFBNormal-Standard"), url("../fonts/TitlingGothicFBNormal-Standard.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Standard.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Standard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Thin"), local("TitlingGothicFBNormal-Thin"), url("../fonts/TitlingGothicFBNormal-Thin.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Thin.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Bold"), local("TitlingGothicFBNormal-Bold"), url("../fonts/TitlingGothicFBNormal-Bold.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Bold.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TitlingGothicFB Normal';
+  src: local("TitlingGothicFB Normal Light"), local("TitlingGothicFBNormal-Light"), url("../fonts/TitlingGothicFBNormal-Light.woff2") format("woff2"), url("../fonts/TitlingGothicFBNormal-Light.woff") format("woff"), url("../fonts/TitlingGothicFBNormal-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, button {
+  font-family: 'IBM Plex Mono', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "TitlingGothicFB Normal", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Tahoma", sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
+}
+
+button {
+  font-family: "TitlingGothicFB Normal", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: inherit;
+}
+
+.icon.left {
+  margin: 0 0.5em 0 0;
+}
+
+.icon.right {
+  margin: 0 0 0 0.5em;
+}
+
+.smaller {
+  font-size: 0.7 0.5rem;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+nav {
+  font-family: "TitlingGothicFB Normal", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Tahoma", sans-serif;
+  font-weight: 300;
+}
+
+button {
+  padding: 0.6rem 2rem;
+  border-radius: 1rem;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button:hover, button:focus {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 0.75px #fff, 0 0 0.75px #fff;
+}
+
+button:active {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?agehrb");
+  src: url("../fonts/icomoon.eot?agehrb#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?agehrb") format("truetype"), url("../fonts/icomoon.woff?agehrb") format("woff"), url("../fonts/icomoon.svg?agehrb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb:before {
+  content: "\e904";
+}
+
+.icon-linkedin:before {
+  content: "\e905";
+}
+
+.icon-phone:before {
+  content: "\e906";
+}
+
+.icon-twitter:before {
+  content: "\e907";
+}
+
+.icon-youtube:before {
+  content: "\e908";
+}
+
+.icon-community:before {
+  content: "\e901";
+}
+
+.icon-consulting:before {
+  content: "\e902";
+}
+
+.icon-capital:before {
+  content: "\e900";
+}
+
+.icon-arrow-down-circle:before {
+  content: "\e903";
+}
+
+.white {
+  -webkit-filter: invert(100%) sepia(99%) saturate(92%) hue-rotate(191deg) brightness(123%) contrast(100%);
+          filter: invert(100%) sepia(99%) saturate(92%) hue-rotate(191deg) brightness(123%) contrast(100%);
+}

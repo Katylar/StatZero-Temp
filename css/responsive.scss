@@ -1,0 +1,168 @@
+@media (min-width: 768px) {
+
+    .gallery, .team-photos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quote-banner .quote-banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85vw;
+    }
+
+    .textbox {
+        width: 85vw;
+        margin: 0 auto;
+    }    
+    
+    .partner-wrapper {
+        padding: 1rem 3rem 0 3rem;
+        text-align: left;
+
+        .partner-blurb {
+            max-width: 400px;
+            text-align: left;    
+        }
+    }
+
+    .kneeler {
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+    
+        .right-item {
+            margin-top: 0;
+        }
+
+        .middot {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header, .textbox, .gallery {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .textbox {
+        width: 70vw;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        .header-logo {
+            margin: 0;
+        }
+    }
+
+    nav {
+        display: block;
+    }
+
+    .hero-content {
+        .headline {
+            margin-bottom: 15vh;
+        }
+        .deck {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .scroller {
+        bottom: 2rem;
+        left: 28%;
+        font-size: 1.25rem;
+
+        .scroller-text {
+            display: inline;
+        }
+    }
+
+    .thesis-text, .quoter-text {
+        padding: 10vh 1rem;
+
+        h2 {
+            margin-bottom: 10vh;
+        }
+    }
+
+    .gallery, .usps {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .team-photos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .usps {
+        padding-right: 20vw;
+    }
+
+    .quote-banner {
+        min-height: 60vh;
+
+        .quote-banner-text {
+            width: 70vw;
+        }
+    }
+
+    .partners {
+        background: url(../img/arc-l.png);
+        padding-left: 20vw;
+    }
+
+    .partner-wrapper {
+        justify-content: center;
+    
+        .logo-wrapper {
+            margin: 1rem 0;
+        }
+
+        .partner-blurb {
+            max-width: 30vw;
+        }
+    }
+
+    .kneeler {
+        .company-infobox {
+            max-width: 33vw;
+            align-items: left;
+            text-align: left;
+
+            img {
+                max-width: 38%;
+            }
+
+            .socmed-icons {
+                justify-content: space-between;
+            }
+        }
+
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 1rem 0;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .gallery {
+        max-width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .quote-banner {
+        min-height: 45vh;
+    }
+}
